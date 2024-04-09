@@ -1,0 +1,7 @@
+/*태그명 선택자*/
+p {background-color: green; font-size: 40px; border:}
+/*ID 선택자*/
+#second_p {background-color: hotpink;}
+* {color:red;}
+/* 클래스 속성 값이 동일한 부분에 적용. p태그 아니어도 됨*/
+.para{background-color: cyan;}
