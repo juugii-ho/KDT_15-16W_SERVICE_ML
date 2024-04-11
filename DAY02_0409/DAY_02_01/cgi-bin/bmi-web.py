@@ -1,19 +1,18 @@
 """
 # URL : http://localhost:8080/cgi-bin/bmi_web.py
 """
-
 ### ==> 모듈 로딩
 import cgi, sys, codecs, os, cgitb
-import cgitb
 from pydoc import html
-# import job
-
-cgitb.enable()
-
 ### ==> Client 요청 데이터 즉, Form 데이터 저장 인스턴스
 form = cgi.FieldStorage()
 
-sys.stdout=codecs.getwriter('utf-8')(sys.stdout.detach())
+### ==> 데이터 추출
+if 'data' in form and 'no' in form:
+    result=form.getvalue('data') + " - " + form.getvalue('no')
+else:
+    result="No Data"
+
 
 ### ==> Web 브라우저 화면 출력 코드
 def print_browser(result=""):
