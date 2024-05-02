@@ -1,0 +1,25 @@
+{% extends "basic.html" %}
+
+{% block title %} q_list {% endblock %}
+
+{% block header %} <h2> <font color='blue'>[질문게시판]</font></h2>{% endblock %}
+{% block content %}
+    {% if questions %}
+        <Table >
+            <tr bgcolor='lightgray'>
+                <td>아이디</td>
+                <td>제  목</td>
+
+            </tr>
+        {% for question in questions %}
+            <tr>
+            <td>{{ question.id }}</td>
+            <td>{{ question.content }} </td>
+            <tr>
+        {% endfor %}
+        </Table>
+    {% else %}
+        <p><font color='red'>등록된 질문없음</font></p>
+    {% endif %}
+
+{% endblock %}

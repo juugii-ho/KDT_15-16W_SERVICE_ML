@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>**input_data**</title>
+    <link href="{{url_for('static', filename='css/style_1.css')}}" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <h1>input data</h1>
+        <form action="{{action}}" method="{{method}}" enctype="multipart/form-data">
+            <input type="text" name="value" placeholder="value"><br>
+            <input type="text" name="message" placeholder="message"><br>
+            <input type="submit"><br><br>
+            <input type="file" name="img_file" accept="image/png, image/jpeg"><br>
+            <img src="{{url_for('static', filename='image/save_button.png')}}" alt="제출" style="width: 100px; height: 100px;"><br><br>
+        </form>
+    </center>
+</body>
+</html>

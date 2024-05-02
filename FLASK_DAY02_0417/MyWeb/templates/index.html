@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>**My Web**</title>
+    <link href="{{url_for('static', filename='css/style_1.css')}}" rel="stylesheet">
+</head>
+<body>
+    <h1>HELLO FLASK {{name}}</h1>
+    <img src="../static/image/_7961571b-656d-4e86-b0f6-54ce89f1af13.jpeg" width="200" height="200">      
+    <img src="{{url_for('static', filename='image/_7961571b-656d-4e86-b0f6-54ce89f1af13.jpeg')}}" width="200" height="200">  
+    <!---같은 방법 2가지로 보이나 위에 것은 리다이렉트 방식-->
+</body>
+</html>
