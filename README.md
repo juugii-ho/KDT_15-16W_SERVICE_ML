@@ -14,7 +14,7 @@
  | FLASK_DAY01_0416 | 24. 4. 16. | Flask 개념, 디렉토리 구조, 환경변수, Routing | [velog link]( https://velog.io/@bbalgang/416-WEB-활용-1일차 ) |
  | FLASK_DAY02_0417 | 24. 4. 17. | Application Factory, Directory | [velog link]( https://velog.io/@bbalgang/417-WEB-활용-2일차 ) |
  | FLASK_DAY03_0418 | 24. 4. 18. | ORM, SQLAlchemy | [velog link]( https://velog.io/@bbalgang/418-WEB-활용-3일차 ) |
- | 
+ 
 
 <br>
 <br>
